@@ -44,17 +44,17 @@ execute_script "default_config.sh"
  #   execute_script "gtk_themes.sh"
 #fi
 
-if [ "$bluetooth" == "Y" ]; then
-    execute_script "bluetooth.sh"
-fi
+#if [ "$bluetooth" == "Y" ]; then
+#    execute_script "bluetooth.sh"
+#fi
 
 #if [ "$sddm" == "Y" ]; then
 #    execute_script "sddm.sh"
 #fi
 
-if [ "$xdph" == "Y" ]; then
-    execute_script "xdph.sh"
-fi
+#if [ "$xdph" == "Y" ]; then
+#    execute_script "xdph.sh"
+#fi
 
 #if [ "$zsh" == "Y" ]; then
 #    execute_script "zsh.sh"

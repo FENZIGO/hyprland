@@ -4,10 +4,24 @@ base_packages=(
   base-devel
   btop
   git
+  nano
+  cachy-browser
+  dolphin
+  wget
 )
 
 hypr_packages=(
   uwsm
+  hyprland-meta-git
+  kitty
+  rofi-wayland
+  grim 
+  swaync
+  waybar
+  xdg-desktop-portal-hyprland-git
+  xdg-desktop-portal-gtk
+  qt5-wayland
+  qt6-wayland
 )
 
 install_package() {
