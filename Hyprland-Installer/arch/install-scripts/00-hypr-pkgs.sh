@@ -12,7 +12,7 @@ base_packages=(
 
 hypr_packages=(
   uwsm
-  hyprland-meta-git
+  hyprland
   kitty
   rofi-wayland
   grim 
@@ -27,13 +27,16 @@ hypr_packages=(
 install_package() {
   if yay -Q "$1" &> /dev/null; then
     echo -e "${OK} $1 is already installed. Skipping..."
+    sleep 1
   else
     echo -e "${NOTE} Installing $1 ..."
     yay -S --noconfirm "$1"
     if yay -Q "$1" &> /dev/null; then
       echo -e "${OK} $1 was installed."
+      sleep 3
     else
       echo -e "${ERROR} $1 failed to install. Please check the install.log."
+      sleep 3
       exit 1
     fi
   fi
@@ -45,7 +48,7 @@ parent_dir="$script_dir/.."
 cd "$parent_dir" || exit 1
 
 echo -e "\n${NOTE} Installing hyprland packages....\n"
-
+sleep 3
 for package in "${hypr_packages[@]}" "${fonts[@]}" "${base_packages[@]}"; do
   install_package "$package"
   if [ $? -ne 0 ]; then
