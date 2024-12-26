@@ -6,7 +6,7 @@ base_packages=(
   git
   nano
   cachy-browser
-  dolphin
+  thunar
   wget
 )
 
