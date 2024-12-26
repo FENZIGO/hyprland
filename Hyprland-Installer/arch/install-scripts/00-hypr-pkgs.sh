@@ -21,6 +21,9 @@ hypr_packages=(
   xdg-desktop-portal-gtk
   qt5-wayland
   qt6-wayland
+  qt5ct
+  qt6ct
+  kvantum
 )
 
 install_package() {
