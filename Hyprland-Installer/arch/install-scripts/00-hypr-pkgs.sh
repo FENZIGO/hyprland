@@ -11,7 +11,6 @@ base_packages=(
 )
 
 hypr_packages=(
-  uwsm
   hyprland
   kitty
   rofi-wayland
